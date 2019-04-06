@@ -1,0 +1,165 @@
+
+<html>
+<head>
+<title>Web Assignment 1</title>
+
+</head>
+<body>
+<style>
+table, th ,td {
+border: 1px solid black;
+border-collapse: collapse;}
+	input{
+		clear: both;
+  		float: right;
+  		margin-right: 400px;
+  		width: 500px;
+  		height:25px;
+	}
+	select{
+		margin-right:600px;
+		height:30px;}	
+form{
+font-size:25px;}	
+
+</style>
+
+<form action="/action_page.php"  method="GET" autocomplete="on">
+<fieldset>
+ <legend><h4>Registration Form</h4></legend>
+<div class = "texti">
+First Name
+ <input type="text" name="firstname" placeholder="First Name" required>
+<br>
+Last Name
+<input type="text" name="lastname" placeholder="Last Name" required><br>
+E-Mail
+<input type="email" name="emailid" placeholder="Email" autocomplete="off" required>
+</div>
+<br>
+Your Gender<br>
+<input type="radio" name="gender" value="male"  required>Male<br>
+<input type="radio" name="gender" value="female"  required>Female<br>
+<input type="radio" name="gender" value="other"  required>Other<br>
+<br>
+
+<h4>Your Birth Date
+<input type="date" name="bday" placeholder="Birth Date" required>
+<br>
+<p><b><u>Batman</u></b><br>If you want to know more about me then  <a href="https://en.wikipedia.org/wiki/Batman">Click Here</a><br>
+<h4>Please Bring All the Documents For Admission Process</h4>
+ <ul>
+   <li>Online Receipt</li>
+   <li>Aadhar Card</li>
+   <li>Address Proof</li>
+   <li>Photo</li>
+</ul>
+<br>
+<h4>Please Bring Above Documents In Below Order</h4>
+ <ol>
+   <li>Online Receipt</li>
+   <li>Aadhar Card</li>
+   <li>Address Proof</li>
+   <li>Photo</li>
+</ol>
+
+Please Select Your Age
+<input type="checkbox" name="age1" value="17" required>17-19<br>
+<input type="checkbox" name="age2" value="20" required>20-22<br>
+<input type="checkbox" name="age3" value="23" required>23-24<br>
+<input type="checkbox" name="age4" value="16" required>You Are underage<br>
+<br>Please Upload Your Image
+<input type="file" name="img"><br>
+
+<br>Section Please
+<select name="section">
+ <option value="a">A</option>
+ <option value="b">B</option> 
+ <option value="c">C</option>
+ <option value="d">D</option>
+</select>
+<br>
+<br>How Much Skilled You Are?
+<select name="language" size="4" multiple>
+ <option value="c">C</option>
+ <option value="java">JAVA</option> 
+ <option value="c++">C++</option>
+ <option value="php">PHP</option>
+<option value="mysql">MYSQL</option>
+<option value="pyhton">PYTHON</option>
+<option value="ai">ARTIFICIAL INTELLIGENCE</option>
+</select>
+<br><br>
+Contact No.
+<input type="tel" name="usertel">
+<br><br>
+Select Your Country
+
+  <input list="Country" name="Country">
+  <datalist id="Country">
+    <option value="India">
+    <option value="Pakistan">
+    <option value="London">
+    <option value="china">
+    <option value="Other">
+  </datalist><br>
+<br>
+Select Time For Exam<br>
+<input type="time" name="usr_time">
+<select name="time" size="1">
+<option value="am">AM</option>
+<option value="pm">PM</option>
+</select>
+<br>
+
+<br>No. of Girlfriends
+<input type="number" name="quantity" min="1" max="5">
+<br>
+User Name
+<input type="text" name="userid">
+<br>
+<br>Password
+<input type="password" name="psw" required>
+<br>
+<br>Your GitHub Account
+<input type="url" name="homepage" placeholder="You GitHub Account">
+<br>(*optional)<br>
+<h4>Can you Upload your Work in Video Format<h4>
+<iframe width="420" height="345"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<br>
+<h4>List Out Your Favourite Food</h4>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Pic</th> 
+    <th>Food Name & Comment</th>
+  </tr>
+  <tr>
+    <td>Shivansh</td>
+    <td><img src="https://recipes.timesofindia.com/photo/53110049.cms" width="250" height="200"></td> 
+    <td>PIZZA<br>Only For Friends</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td><img src="https://i.kinja-img.com/gawker-media/image/upload/s--l6rS3nZj--/c_scale,f_auto,fl_progressive,q_80,w_800/vcwkkj2ayw6eez1rbwdt.jpg" width="250" height="200"></td>
+    <td>BURGER<br>Only For Singles</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td><img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/f0/48/9a/south-indian-thali.jpg" width="250" height="200"></td>
+    <td>INDIAN FOOD<br>Family Time</td>
+  </tr>
+</table>
+<br>
+<br>
+
+
+<div class="call">
+<input type="submit" value="Submit" onclick="alert('Complete your Details')" formtarget="_blank" width="100px"><br>
+<input type="reset" value="Reset" width="100px">
+</div>
+</fieldset></form>
+</body>
+</html>
